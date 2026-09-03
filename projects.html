@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Dinuka Manohara</title>
+  <meta name="description" content="Software and research projects by Dinuka Manohara.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html">Dinuka Manohara</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero container-wide">
+      <h1>Projects</h1>
+      <p>Things I've built — from research prototypes to side projects. Each card is a
+        <code>&lt;div class="project-card"&gt;</code> in <code>projects.html</code>.</p>
+    </section>
+
+    <div class="container-wide">
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="images/project-1.svg" alt="Screenshot or logo for Project One">
+          </div>
+          <div class="project-body">
+            <h3>Project One</h3>
+            <p>A short, one- or two-sentence description of what this project does and why
+              you built it.</p>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="images/project-2.svg" alt="Screenshot or logo for Project Two">
+          </div>
+          <div class="project-body">
+            <h3>Project Two</h3>
+            <p>A short, one- or two-sentence description of what this project does and why
+              you built it.</p>
+            <div class="tag-row">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="images/project-3.svg" alt="Screenshot or logo for Project Three">
+          </div>
+          <div class="project-body">
+            <h3>Project Three</h3>
+            <p>A short, one- or two-sentence description of what this project does and why
+              you built it.</p>
+            <div class="tag-row">
+              <span class="tag">Machine Learning</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Paper</a>
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb">
+            <img src="images/project-4.svg" alt="Screenshot or logo for Project Four">
+          </div>
+          <div class="project-body">
+            <h3>Project Four</h3>
+            <p>A short, one- or two-sentence description of what this project does and why
+              you built it.</p>
+            <div class="tag-row">
+              <span class="tag">CLI Tool</span>
+              <span class="tag">Rust</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container-wide">
+      <span>&copy; <span id="year">2026</span> Dinuka Manohara. Built with plain HTML &amp; CSS.</span>
+      <div class="footer-links">
+        <a href="mailto:dinuka.university@gmail.com">Email</a>
+        <a href="https://github.com/DinukaManohara" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

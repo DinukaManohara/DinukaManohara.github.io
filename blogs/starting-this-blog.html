@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starting This Blog — Dinuka Manohara</title>
+  <meta name="description" content="Why I decided to start writing in public and how this site is put together.">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="../index.html">Dinuka Manohara</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">About</a></li>
+        <li><a href="../publications.html">Publications</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header class="post-header container">
+      <div class="post-date">March 12, 2026</div>
+      <h1>Starting This Blog</h1>
+      <p class="post-meta">By Dinuka Manohara</p>
+    </header>
+
+    <article class="post-content container">
+      <p>
+        I've wanted a place to write in public for a while — somewhere to think out loud about
+        projects, papers, and the small technical decisions that don't fit anywhere else. This is
+        that place.
+      </p>
+
+      <h2>What to expect</h2>
+      <p>
+        Mostly short, practical posts: how a project came together, notes from something I read,
+        or a problem I ran into and how I solved it. Nothing polished for its own sake — just
+        honest notes.
+      </p>
+
+      <h2>How this site works</h2>
+      <p>
+        The whole site is static HTML, CSS, and a small amount of JavaScript for the mobile menu —
+        no build step, no framework. Each page lives as its own <code>.html</code> file, and every
+        blog post is a file inside the <code>blogs/</code> folder, styled with the same shared
+        stylesheet in <code>css/style.css</code>. It's hosted for free on GitHub Pages, straight
+        from this repository.
+      </p>
+
+      <blockquote>
+        Simple tools, kept close to the metal, are easier to maintain for years than anything
+        clever.
+      </blockquote>
+
+      <p>
+        If you want to do the same, feel free to fork this repository and swap in your own
+        content — the layout is meant to be easy to adapt.
+      </p>
+    </article>
+
+    <div class="post-footer container">
+      <a href="../blog.html">&larr; Back to all posts</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container-wide">
+      <span>&copy; <span id="year">2026</span> Dinuka Manohara. Built with plain HTML &amp; CSS.</span>
+      <div class="footer-links">
+        <a href="mailto:dinuka.university@gmail.com">Email</a>
+        <a href="https://github.com/DinukaManohara" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
