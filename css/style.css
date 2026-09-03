@@ -240,6 +240,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 
 @media (max-width: 900px) {
   .home-layout { grid-template-columns: 1fr; }
+  .news-panel { order: -1; }
 }
 
 /* ============================================================
