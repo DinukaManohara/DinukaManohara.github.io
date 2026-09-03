@@ -1,12 +1,13 @@
 # DinukaManohara.github.io
 
-My personal website — a static site with About, Publications, Projects, and Blog pages, hosted
-on GitHub Pages. No build step, no framework: just HTML, CSS, and a little vanilla JS.
+My personal website — a static site with About, Experience, Publications, Projects, and Blog
+pages, hosted on GitHub Pages. No build step, no framework: just HTML, CSS, and a little vanilla JS.
 
 ## Structure
 
 ```
 index.html            About page (alternating image/text sections)
+experience.html         Experience timeline
 publications.html      Publications list
 projects.html          Projects grid
 blog.html               Blog post index
@@ -21,11 +22,18 @@ favicon.svg              Site favicon
 ## Editing content
 
 - **About**: edit `index.html` directly — swap the placeholder text and the images in the
-  `about-block` sections.
+  `about-block` sections. The email line right under your name and the social icon row (LinkedIn,
+  Google Scholar, GitHub, ORCID) are also there — update the `href`s to your real profiles.
+- **Experience**: add or edit `<li class="timeline-item">` entries in `experience.html`.
 - **Publications**: add or edit `<li class="pub-item">` entries in `publications.html`.
 - **Projects**: add or edit `<article class="project-card">` entries in `projects.html`.
 - **Blog**: copy `blogs/_template.html` to `blogs/your-post-slug.html`, write the post, then add
   a matching `<li class="post-item">` entry to `blog.html` so it shows up in the list.
+- **Social icons / email**: the footer on every page and the About page hero use the same set of
+  icon links (LinkedIn, Google Scholar, GitHub, ORCID) — update the placeholder URLs (`your-linkedin`,
+  `YOUR_SCHOLAR_ID`, the ORCID iD) to your own. The email address on the About page is written as
+  `name [at] domain [dot] com` instead of a `mailto:` link, on purpose, to make it harder for bots
+  to scrape — swap in your own address using the same bracket notation.
 
 ## Images
 
